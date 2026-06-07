@@ -1,0 +1,114 @@
+@media (max-width: 1120px) {
+  .summary-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portkey-grid,
+  .wallet-grid,
+  .annual-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .archive-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .report-month-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .form-grid,
+  .form-grid.four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    padding: 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .primary-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .nav-button {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .wallet-link {
+    margin-top: 0;
+  }
+
+  .view {
+    padding: 20px 16px 40px;
+  }
+
+  .input-grid,
+  .month-comments {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .primary-nav,
+  .savings-overview-grid,
+  .portkey-grid,
+  .archive-grid,
+  .report-month-grid,
+  .wallet-grid,
+  .annual-grid,
+  .form-grid,
+  .form-grid.two,
+  .form-grid.four {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-box canvas,
+  .summary-copy {
+    min-height: 320px;
+  }
+
+  .summary-line,
+  .home-list li,
+  .shopping-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .sidebar,
+  .toast,
+  .panel-actions,
+  .form-actions,
+  .tab-list,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-shell {
+    display: block;
+  }
+
+  .view {
+    width: 100%;
+    padding: 0;
+  }
+}

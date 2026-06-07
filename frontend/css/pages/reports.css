@@ -1,0 +1,72 @@
+.report-month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.report-month-button {
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  min-height: 82px;
+  padding: 13px;
+  text-align: center;
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.report-month-button span {
+  color: var(--muted);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+}
+
+.report-month-button strong {
+  font-size: 30px;
+}
+
+.report-month-button.is-active {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.report-heading {
+  margin: 4px 0 -4px;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.annual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mini-card {
+  min-height: 98px;
+  display: grid;
+  align-content: space-between;
+  padding: 14px;
+}
+
+.mini-card p {
+  margin: 0;
+}
+
+.mini-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+.month-comments {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.month-comment {
+  min-height: 74px;
+  resize: vertical;
+}
+

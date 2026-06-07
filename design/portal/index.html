@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Household Book Design Portal</title>
+    <link rel="stylesheet" href="../../frontend/css/app.css" />
+    <link rel="stylesheet" href="./css/portal.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script type="module" src="./js/portalMain.js"></script>
+  </head>
+  <body>
+    <div class="design-portal">
+      <aside class="portal-pane portal-sidebar">
+        <header class="portal-header">
+          <h1>Design Portal</h1>
+          <p>Household Book</p>
+        </header>
+        <nav id="screenList" class="screen-list" aria-label="Screen list"></nav>
+      </aside>
+
+      <main class="portal-preview-pane">
+        <header class="preview-header">
+          <div>
+            <p class="portal-kicker">Screen Preview</p>
+            <h2 id="previewTitle">Home</h2>
+          </div>
+          <span id="previewSource" class="source-pill"></span>
+        </header>
+        <section id="previewRoot" class="preview-stage" aria-label="Screen preview"></section>
+      </main>
+
+      <aside class="portal-pane inspector-pane">
+        <section class="inspector-section">
+          <h2>Screen</h2>
+          <div id="screenInspector" class="inspector-body"></div>
+        </section>
+        <section class="inspector-section">
+          <h2>Component</h2>
+          <div id="componentInspector" class="inspector-body"></div>
+        </section>
+        <section class="inspector-section">
+          <h2>Action</h2>
+          <div id="actionInspector" class="inspector-body"></div>
+        </section>
+        <section class="inspector-section">
+          <h2>Computed Style</h2>
+          <div id="styleInspector" class="inspector-body"></div>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>

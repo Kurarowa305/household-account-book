@@ -1,0 +1,106 @@
+.section-stack {
+  display: grid;
+  gap: 18px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+  gap: 18px;
+}
+
+.panel,
+.summary-panel,
+.savings-overview-card,
+.history-card,
+.shopping-card,
+.archive-card,
+.report-card,
+.wallet-card,
+.mini-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 1px 0 rgba(31, 36, 40, 0.02);
+}
+
+.panel,
+.summary-panel,
+.history-card,
+.shopping-card,
+.report-card {
+  padding: 18px;
+}
+
+.panel header,
+.summary-panel header,
+.savings-overview-section header,
+.summary-section header,
+.portkeys-section header,
+.history-card header,
+.shopping-card header,
+.report-card header,
+.report-months header,
+.archive-section header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel h2,
+.summary-panel h2,
+.savings-overview-section h2,
+.summary-section h2,
+.portkeys-section h2,
+.shopping-section h2,
+.section-heading,
+.history-card h2,
+.shopping-card h2,
+.report-card h2,
+.report-months h2,
+.archive-section h2 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.section-heading {
+  display: block;
+}
+
+.eyebrow,
+.field-label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.muted-text,
+.metric-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.money-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.summary-section,
+.portkeys-section,
+.input-section,
+.report-months {
+  display: grid;
+  gap: 14px;
+}
