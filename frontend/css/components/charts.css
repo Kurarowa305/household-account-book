@@ -1,0 +1,16 @@
+.chart-box {
+  display: grid;
+  gap: 12px;
+}
+
+.chart-shell {
+  position: relative;
+}
+
+.chart-box canvas {
+  width: 100%;
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}

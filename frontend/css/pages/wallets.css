@@ -1,0 +1,78 @@
+.wallet-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.wallet-card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  gap: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wallet-select {
+  width: 100%;
+  min-height: 120px;
+  display: grid;
+  place-items: center;
+  padding: 16px 48px 16px 16px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.wallet-card.is-active {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.wallet-menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.wallet-menu summary {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--muted);
+  cursor: pointer;
+  list-style: none;
+}
+
+.wallet-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.wallet-menu summary:hover {
+  background: var(--surface-strong);
+}
+
+.wallet-menu summary svg {
+  width: 18px;
+  height: 18px;
+}
+
+.danger-menu-button {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  min-width: 92px;
+  padding: 8px 10px;
+  border: 1px solid #e9c3c6;
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--danger);
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+
+.danger-menu-button:hover {
+  background: #fbebec;
+}
+

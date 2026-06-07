@@ -1,0 +1,316 @@
+.savings-overview-section {
+  display: grid;
+  gap: 14px;
+}
+
+.savings-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.savings-overview-card {
+  display: grid;
+  gap: 6px;
+  min-height: 112px;
+  align-content: center;
+  padding: 18px;
+}
+
+.savings-overview-card strong {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.summary-grid {
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(280px, 0.82fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.chart-shell {
+  position: relative;
+}
+.summary-section .chart-box canvas {
+  border: 0;
+  background: transparent;
+}
+
+.chart-legend {
+  position: absolute;
+  top: 8px;
+  right: 42px;
+  display: grid;
+  gap: 6px;
+  width: 118px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.chart-legend-primary {
+  display: grid;
+  gap: 6px;
+}
+
+.chart-legend-card,
+.chart-legend-list {
+  border: 1px solid rgba(217, 222, 216, 0.7);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.chart-legend-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 8px;
+}
+
+.chart-legend-summary {
+  display: grid;
+  gap: 6px;
+}
+
+.chart-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chart-legend-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+}
+
+.chart-legend-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-swatch {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+}
+
+.summary-copy {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  min-height: 420px;
+  padding: 36px 10px 16px;
+}
+
+.goal-comment {
+  display: grid;
+  gap: 6px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.goal-comment strong {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+.savings-value {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.annual-savings-label {
+  margin-top: 18px;
+}
+
+.annual-savings-value {
+  margin: 4px 0 0;
+  font-size: clamp(21px, 2vw, 30px);
+  line-height: 1.12;
+  font-weight: 800;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.summary-line strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.summary-rule {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+.portkey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.portkey-card {
+  width: 100%;
+  min-height: 166px;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 22px 16px;
+  text-align: center;
+  background: var(--surface);
+  border-color: var(--line);
+  overflow: hidden;
+}
+
+.portkey-card:hover {
+  transform: translateY(-1px);
+}
+
+.portkey-card h3,
+.archive-card h3,
+.wallet-card h3,
+.mini-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.portkey-icon {
+  width: min(68%, 118px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--card-color) 16%, white);
+  color: var(--card-color);
+}
+
+.portkey-icon svg {
+  width: 58%;
+  height: 58%;
+  stroke-width: 1.8;
+}
+
+.progress {
+  display: block;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-strong);
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.home-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 46px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.home-list li:last-child {
+  border-bottom: 0;
+}
+
+.archive-section {
+  display: grid;
+  gap: 14px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.archive-card {
+  min-height: 116px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 14px;
+  text-align: center;
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.archive-card strong {
+  font-size: 34px;
+}
+
+.archive-card span {
+  color: var(--muted);
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 800;
+}
+
+.month-card.is-disabled,
+.month-card:disabled {
+  cursor: not-allowed;
+  background: #edf0ed;
+  border-color: #dfe4df;
+  color: #9aa39d;
+}
+
+.month-card.is-disabled span,
+.month-card:disabled span,
+.month-card.is-disabled strong,
+.month-card:disabled strong {
+  color: #9aa39d;
+}
+
+.shopping-section {
+  display: grid;
+  gap: 14px;
+}
+
+.shopping-entry-card {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.shopping-entry-card svg {
+  width: min(34vw, 150px);
+  height: min(34vw, 150px);
+  color: var(--teal);
+  stroke-width: 1.45;
+}
+

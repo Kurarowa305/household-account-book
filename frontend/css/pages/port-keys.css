@@ -1,0 +1,48 @@
+.portkey-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portkey-nav .tab-button {
+  min-height: 42px;
+}
+
+.portkey-nav .tab-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.input-card-heading {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.input-subheading {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.daily-input-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  align-items: start;
+  gap: 8px;
+}
+
+.daily-input-card {
+  min-width: 0;
+}
+
+.daily-item-button {
+  margin-top: 0;
+}
+
