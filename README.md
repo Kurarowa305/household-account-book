@@ -32,7 +32,7 @@ python3 -m http.server --bind 127.0.0.1 --directory . 4174
 
 ## テスト資料
 
-- [フロントエンドテスト観点](docs/test/フロントエンドテスト観点.md): 現状の画面実装、mock ViewModel、Action、Design Portal同期をCIで確認するためのテスト観点。
+- [フロントエンドテスト観点](design/docs/test/フロントエンドテスト観点.md): 現状の画面実装、mock ViewModel、Action、Design Portal同期をCIで確認するためのテスト観点。
 
 ## テスト実行
 
