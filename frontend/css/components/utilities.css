@@ -1,0 +1,26 @@
+.empty-state {
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--muted);
+  text-align: center;
+  padding: 24px;
+}
+
+.accent-teal {
+  border-top: 4px solid var(--teal);
+}
+
+.accent-coral {
+  border-top: 4px solid var(--coral);
+}
+
+.accent-gold {
+  border-top: 4px solid var(--gold);
+}
+
+.accent-green {
+  border-top: 4px solid var(--green);
+}

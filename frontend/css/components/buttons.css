@@ -1,0 +1,116 @@
+.nav-button,
+.wallet-link,
+.primary-button,
+.secondary-button,
+.quiet-button,
+.danger-button,
+.tab-button,
+.icon-button,
+.wallet-card,
+.portkey-card,
+.shopping-entry-card,
+.archive-card,
+.report-month-button {
+  min-height: 40px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+.nav-button:hover,
+.wallet-link:hover,
+.primary-button:hover,
+.secondary-button:hover,
+.quiet-button:hover,
+.tab-button:hover,
+.icon-button:hover,
+.wallet-card:hover,
+.portkey-card:hover,
+.shopping-entry-card:hover,
+.archive-card:hover,
+.report-month-button:hover {
+  border-color: var(--line);
+  background: var(--surface-strong);
+}
+.nav-button svg,
+.wallet-link svg,
+.primary-button svg,
+.secondary-button svg,
+.quiet-button svg,
+.danger-button svg,
+.icon-button svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+.primary-button,
+.secondary-button,
+.quiet-button,
+.danger-button,
+.tab-button,
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 9px 12px;
+}
+
+.primary-button {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+  font-weight: 700;
+}
+
+.primary-button:hover {
+  background: #1d665f;
+  border-color: #1d665f;
+}
+
+.secondary-button {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.quiet-button {
+  color: var(--muted);
+}
+
+.danger-button {
+  background: #fff;
+  border-color: #e9c3c6;
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.danger-button:hover {
+  background: #fbebec;
+}
+
+.icon-button {
+  width: 40px;
+  min-width: 40px;
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.tab-button {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+.tab-button.is-active {
+  background: var(--indigo-soft);
+  border-color: #aeb6e8;
+  color: #2e367a;
+  font-weight: 800;
+}
+
