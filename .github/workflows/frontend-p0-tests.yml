@@ -1,0 +1,20 @@
+name: Frontend P0 Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  frontend-p0:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run frontend P0 tests
+        run: npm run test:frontend:p0
